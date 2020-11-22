@@ -1,0 +1,70 @@
+/* ============================== LAYOUTS ============================== */
+.app-wrapper {
+  background-image: url('./assets/img/bg.jpg');
+  min-height: 100vh;
+  padding: 1rem 0;
+}
+
+.app-header,
+.app-content,
+.app-footer {
+  margin-top: 1rem;
+  background: #fff;
+  padding: 1rem 0.5rem;
+  border: 2px solid #ccc;
+  width: 95%;
+}
+
+/* ============================== HEADER ============================== */
+.app-header .app-title,
+.app-header .app-subtitle,
+.app-header .app-description,
+.app-header .app-buttons {
+  text-align: center;
+  margin: 1rem;
+}
+
+/* ============================== CONTENT ============================== */
+.app-col {
+  padding: 0.5rem;
+}
+
+.app-card {
+  text-align: right;
+  background: #fff;
+}
+
+.app-table {
+  text-align: right;
+  direction: rtl;
+}
+table.app-table tbody tr:hover {
+  color: #41403e;
+  background: #efefef;
+  cursor: pointer;
+}
+
+button.active {
+  color: #fff;
+}
+
+button.ms {
+  background: #0071de;
+}
+
+button.en {
+  background: #86a361;
+}
+
+.badge {
+  white-space: normal;
+}
+
+/* ============================== FOOTER ============================== */
+.app-footer {
+  text-align: center;
+}
+
+.app-footer span {
+  color: #f00;
+}

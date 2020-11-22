@@ -1,0 +1,17 @@
+{
+  "name": "react-projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Handle multiple react projects in one repo using Netlify monorepo",
+  "scripts": {
+    "build:arabic": "npm --prefix arabic run build",
+    "build:test": "npm --prefix test run build"
+  },
+  "keywords": [
+    "react",
+    "projects",
+    "monorepo"
+  ],
+  "author": "Syahmi Fauzi",
+  "license": "ISC"
+}
