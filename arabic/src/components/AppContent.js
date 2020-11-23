@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Dhomir from './lessons/Dhomir';
+import IsmIsyarah from './lessons/IsmIsyarah';
+import FiilMadhi from './lessons/FiilMadhi';
 
 const AppContent = ({ lessons, states, setStates }) => {
   const { active, en, ms } = states;
@@ -28,6 +30,8 @@ const AppContent = ({ lessons, states, setStates }) => {
     <div className="container app-content">
       {active === -1 && buildLessonList()}
       {active === 0 && <Dhomir en={en} ms={ms} />}
+      {active === 1 && <IsmIsyarah en={en} ms={ms} />}
+      {active === 2 && <FiilMadhi en={en} ms={ms} />}
     </div>
   );
 };

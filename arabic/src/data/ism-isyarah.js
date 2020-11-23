@@ -1,4 +1,4 @@
-export default [
+const ismIsyarah = [
   [
     [
       { ar: 'لِلْقَرِيبِ', en: 'Near', ms: 'Dekat' },
@@ -44,3 +44,5 @@ export default [
     ],
   ],
 ];
+
+export default ismIsyarah;
