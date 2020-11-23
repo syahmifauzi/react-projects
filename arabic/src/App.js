@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
 
-import AppLogo from './components/AppLogo';
 import AppHeader from './components/AppHeader';
 import AppContent from './components/AppContent';
 import AppFooter from './components/AppFooter';
@@ -34,7 +33,6 @@ const App = () => {
 
   return (
     <div className="app-wrapper">
-      <AppLogo />
       <AppHeader lessons={LESSONS} states={states} setStates={setStates} />
       <AppContent lessons={LESSONS} states={states} setStates={setStates} />
       <AppFooter />

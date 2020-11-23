@@ -1,14 +1,14 @@
 import React from 'react';
 
 import ismIsyarah from '../../data/ism-isyarah';
+import TextTranslations from '../shared/TextTranslations';
 
 const IsmIsyarah = ({ en, ms }) => {
   const buildRow = row => (
     <tr>
       {row.map((col, colIdx) => (
         <td key={colIdx.toString()}>
-          {col.ar} {en && <span className="badge success">{col.en}</span>}{' '}
-          {ms && <span className="badge secondary">{col.ms}</span>}
+          <TextTranslations text={col} en={en} ms={ms} />
         </td>
       ))}
     </tr>

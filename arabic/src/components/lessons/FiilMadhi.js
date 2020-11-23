@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import dhomir from '../../data/dhomir';
 import fiilMadhi from '../../data/fiil-madhi';
+import TextTranslations from '../shared/TextTranslations';
 
 const tableHeads = [
   {
@@ -27,17 +28,12 @@ const FiilMadhi = ({ en, ms }) => {
     setActiveVerb(fiilMadhi.words[0].verbs[0]);
   }, [setActiveVerb]);
 
-  const buildTranslations = word => (
-    <>
-      {word.ar} {en && <span className="badge success">{word.en}</span>}{' '}
-      {ms && <span className="badge secondary">{word.ms}</span>}
-    </>
-  );
-
   const buildRow = row => (
     <tr>
       {row.map((col, colIdx) => (
-        <td key={colIdx.toString()}>{buildTranslations(col)}</td>
+        <td key={colIdx.toString()}>
+          <TextTranslations text={col} en={en} ms={ms} />
+        </td>
       ))}
     </tr>
   );
@@ -80,7 +76,7 @@ const FiilMadhi = ({ en, ms }) => {
                     ? 'btn-primary'
                     : 'btn-primary-outline'
                 }>
-                {buildTranslations(verb)}
+                <TextTranslations text={verb} en={en} ms={ms} />
               </button>
             ))}
           </div>

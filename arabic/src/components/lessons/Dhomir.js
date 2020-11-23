@@ -1,14 +1,14 @@
 import React from 'react';
 
 import dhomir from '../../data/dhomir';
+import TextTranslations from '../shared/TextTranslations';
 
 const Dhomir = ({ en, ms }) => {
   const buildRow = row => (
     <tr>
       {row.map((col, idx) => (
         <td key={idx.toString()}>
-          {col.ar} {en && <span className="badge success">{col.en}</span>}{' '}
-          {ms && <span className="badge secondary">{col.ms}</span>}
+          <TextTranslations text={col} en={en} ms={ms} />
         </td>
       ))}
     </tr>

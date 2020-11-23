@@ -3,6 +3,7 @@ import React from 'react';
 import Dhomir from './lessons/Dhomir';
 import IsmIsyarah from './lessons/IsmIsyarah';
 import FiilMadhi from './lessons/FiilMadhi';
+import FiilMudhori from './lessons/FiilMudhori';
 
 const AppContent = ({ lessons, states, setStates }) => {
   const { active, en, ms } = states;
@@ -32,6 +33,7 @@ const AppContent = ({ lessons, states, setStates }) => {
       {active === 0 && <Dhomir en={en} ms={ms} />}
       {active === 1 && <IsmIsyarah en={en} ms={ms} />}
       {active === 2 && <FiilMadhi en={en} ms={ms} />}
+      {active === 3 && <FiilMudhori en={en} ms={ms} />}
     </div>
   );
 };
