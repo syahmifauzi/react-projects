@@ -1,0 +1,4 @@
+[build]
+  base = "/arabic"
+  publish = "build/"
+  command = "PUBLIC_URL=https://arabic-sf.netlify.app/ npm run build"
