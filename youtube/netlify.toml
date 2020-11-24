@@ -2,4 +2,4 @@
   base = "/youtube"
   publish = "build/"
   functions = "functions/"
-  command = "npm run build"
+  command = "PUBLIC_URL=https://youtube-sf.netlify.app/ npm run build"
