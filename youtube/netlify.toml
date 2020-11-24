@@ -1,0 +1,5 @@
+[build]
+  base = "/youtube"
+  publish = "build/"
+  functions = "functions/"
+  command = "npm run build"
