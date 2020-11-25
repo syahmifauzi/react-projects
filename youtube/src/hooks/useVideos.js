@@ -10,9 +10,9 @@ const useVideos = defaultSearchTerm => {
 
   const search = async term => {
     try {
-      const response = await axios.post(
+      const response = await axios.get(
         'https://youtube-sf.netlify.app/.netlify/functions/youtube',
-        { term }
+        { params: { term } }
       );
       setVideos(response.data.items);
     } catch (err) {

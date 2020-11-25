@@ -8,7 +8,7 @@ const formattedReturn = (statusCode, body) => ({
 
 exports.handler = async event => {
   try {
-    const { term } = JSON.parse(event.body);
+    const { term } = event.queryStringParameters;
     const { YT_API_KEY } = process.env;
 
     return axios
