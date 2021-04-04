@@ -32,7 +32,7 @@ const Header = ({ user }) => {
     <div className="bg-gradient-to-br from-blue-600 to-blue-500 text-white shadow-md">
       <Container>
         <div className="flex justify-between items-center relative">
-          <h2 className="text-lg font-medium">To-Do App</h2>
+          <h2 className="text-lg font-medium">Just Do It</h2>
           {!user && <a href="/api/auth/login">Sign In</a>}
           {user && (
             <div ref={wrapperRef} className="relative">
