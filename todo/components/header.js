@@ -38,15 +38,17 @@ const Header = ({ user }) => {
             <div ref={wrapperRef} className="relative">
               <button
                 onClick={() => setOpenMenu(!openMenu)}
-                className="btn w-9 h-9 p-0 flex">
-                <img src={user.picture} alt={user.name} className="icon" />
+                className="btn w-9 h-9 p-0 flex relative">
+                <div
+                  className="icon bg-contain"
+                  style={{ backgroundImage: `url("${user.picture}")` }}
+                />
               </button>
               {openMenu && (
                 <div className="flex items-start absolute right-1 top-10 bg-white text-gray-900 p-2 rounded-sm shadow-md w-max">
-                  <img
-                    src={user.picture}
-                    alt={user.name}
-                    className="w-12 h-12 rounded-full shadow-md"
+                  <div
+                    className="w-12 h-12 rounded-full shadow-md bg-contain"
+                    style={{ backgroundImage: `url("${user.picture}")` }}
                   />
                   <div className="px-2">
                     <div className="font-medium">{user.name}</div>
