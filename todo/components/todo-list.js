@@ -47,7 +47,7 @@ const TodoList = ({ todos, user }) => {
   return (
     <Section icon="list" title="To-Do List" color="yellow">
       {user && renderContent()}
-      {!user && <Message>You need to sign in view your todo list.</Message>}
+      {!user && <Message>You need to sign in to view your todo list.</Message>}
       {user && !todos.length && <Message>Please add your todo.</Message>}
     </Section>
   );

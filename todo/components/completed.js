@@ -37,7 +37,7 @@ const Completed = ({ todos, user }) => {
     <Section icon="clipboard-check" title="Completed" color="green">
       {user && renderContent()}
       {!user && (
-        <Message>You need to sign in view your completed todos.</Message>
+        <Message>You need to sign in to view your completed todos.</Message>
       )}
       {user && !todos.length && <Message>Please complete your todos.</Message>}
     </Section>
