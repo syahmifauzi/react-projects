@@ -1,4 +1,4 @@
 [build]
   base = "/todo"
   publish = "out/"
-  command = "npm run build"
+  command = "npm run build && npm run export"
