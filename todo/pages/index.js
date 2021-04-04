@@ -17,6 +17,10 @@ export default function Home({ initialTodos }) {
     setTodos(initialTodos);
   }, []);
 
+  useEffect(() => {
+    if (user) fetch('/api/checkUser');
+  }, [user]);
+
   const getTodoList = () => todos.filter(todo => !todo.fields.completed);
 
   const getCompletedTodos = () => todos.filter(todo => todo.fields.completed);
