@@ -39,7 +39,7 @@ const HomePage: NextPage<Props> = ({ duas }) => {
 
 export default HomePage
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const duas: Dua[] = await getAllDuas()
 
   return {
