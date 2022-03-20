@@ -41,7 +41,6 @@ const SEO: FC<Props> = ({ ...customMeta }) => {
       <meta name="description" content={meta.description} />
       <meta name="keywords" content={meta.keywords} />
       <meta name="author" content={meta.author} />
-      <link rel="icon" href="/static/images/logo.png" />
       {/* <meta property="og:url" content={`/${router.asPath}`} /> */}
       {/* <link rel="canonical" href={`/${router.asPath}`} /> */}
       <meta property="og:type" content={meta.type} />
