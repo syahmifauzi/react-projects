@@ -15,11 +15,11 @@ const Card: FC<Props> = ({ dua }) => {
   const [message, setMessage] = useState('')
   const [showDelete, setShowDelete] = useState(false)
 
-  const handleEdit = () => {
-    // console.log('edit')
-    // setEndabledEdit(true)
-    // selectedDua(dua)
-  }
+  // const handleEdit = () => {
+  //   // console.log('edit')
+  //   // setEndabledEdit(true)
+  //   // selectedDua(dua)
+  // }
 
   const handleDelete = async () => {
     if (!message) return
@@ -58,20 +58,20 @@ const Card: FC<Props> = ({ dua }) => {
         <FiEdit />
       </button> */}
       {showDelete && (
-        <div>
+        <div className="mt-4 flex flex-col sm:flex-row items-center gap-2 justify-center">
           <input
             type="text"
             value={message}
             placeholder="Sebab"
             onChange={(e) => setMessage(e.target.value)}
-            className="border rounded-md ring-slate-600 p-2 mr-2"
+            className="border rounded-md ring-slate-600 p-2 w-full"
           />
           <button
             disabled={isLoading}
             onClick={handleDelete}
             className={`${
               isLoading ? 'bg-gray-500' : 'bg-red-600'
-            } text-white px-4 py-2 rounded-md mt-4`}>
+            } whitespace-nowrap text-white px-4 py-2 rounded-md w-full sm:w-auto`}>
             Buang Doa
           </button>
         </div>
