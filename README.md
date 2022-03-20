@@ -11,4 +11,5 @@
 
 1. Arabic [(Live Demo)](https://arabic-sf.netlify.app/) | [(Source Code)](arabic/)
 2. YouTube [(Live Demo)](https://youtube-sf.netlify.app/) | [(Source Code)](youtube/)
-3. ToDo [(Live Demo)](https://todo-sf.netlify.app/) | [(Source Code)](todo/)
+3. JustDoIt [(Live Demo)](https://todo-sf.netlify.app/) | [(Source Code)](todo/)
+4. Doa Harian [(Live Demo)](https://doaharian.netlify.app/) | [(Source Code)](doaharian/)
