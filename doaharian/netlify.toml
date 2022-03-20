@@ -1,0 +1,4 @@
+[build]
+  base = "/doaharian"
+  publish = "out/"
+  command = "npm run build"
