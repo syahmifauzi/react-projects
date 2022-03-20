@@ -10,7 +10,7 @@ const NotFoundPage: NextPage = () => {
         <h1 className="text-6xl font-bold">404</h1>
         <p className="text-3xl font-light mb-4">Page Not Found</p>
         <Link href="/">
-          <a className="p-2 rounded-md bg-sky-500 hover:bg-sky-600 text-white">
+          <a className="px-4 py-2 rounded-md bg-green-500 hover:bg-green-600 text-white">
             Go Home
           </a>
         </Link>
