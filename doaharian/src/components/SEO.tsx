@@ -25,7 +25,7 @@ const SEO: FC<Props> = ({ ...customMeta }) => {
   const meta = {
     site_name: 'Himpunan Doa Harian',
     title: getTitle(),
-    description: `Himpunan doa-doa yang boleh kita amalkan sama-sama dalam kehidupan seharian.`,
+    description: `Himpunan doa-doa yang boleh kita sama-sama amalkan dalam kehidupan seharian.`,
     keywords: `doa`,
     author: ``,
     type: 'website',
