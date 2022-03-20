@@ -17,8 +17,9 @@ export default async function handler(
       const isDeleted = await deleteDua(title, message)
       if (isDeleted) {
         res.status(200).json({ success: true })
+      } else {
+        res.status(500).json({ error: 'Doa tidak berjaya dibuang' })
       }
-      res.status(500).json({ error: 'Doa tidak berjaya dibuang' })
     }
   } catch (error) {
     console.error(error)
