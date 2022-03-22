@@ -21,9 +21,9 @@ const AppProvider: FC = ({ children }) => {
   const debouncedSearchTerm = useDebounce<string>(searchTerm, 500)
 
   useEffect(() => {
-    const filtered = duas.filter(({ title }) =>
-      title?.toLowerCase().includes(debouncedSearchTerm.toLowerCase())
-    )
+    const query = debouncedSearchTerm.toLowerCase()
+    const re = RegExp(`.*${query.split('').join('.*')}.*`)
+    const filtered = duas.filter(({ title }) => title?.toLowerCase().match(re))
     setFilteredDuas(filtered)
   }, [debouncedSearchTerm, duas])
 
