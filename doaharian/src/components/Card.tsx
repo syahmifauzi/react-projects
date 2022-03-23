@@ -40,7 +40,7 @@ const Card: FC<Props> = ({ dua }) => {
   return (
     <div className="relative border flex flex-col justify-center items-center bg-white p-4 rounded-md shadow-sm hover:shadow-md text-center">
       <h2 className="text-xl font-medium text-green-600">{dua.title}</h2>
-      <div className="font-amiri text-2xl my-6">{dua.arabic}</div>
+      <div className="font-amiri text-2xl my-6 leading-10">{dua.arabic}</div>
       <div className="text-sm font-light mb-2">{dua.transliteration}</div>
       <div className="text-sm font-normal">&ldquo;{dua.malay}&rdquo;</div>
       <button
